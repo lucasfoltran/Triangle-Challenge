@@ -1,0 +1,12 @@
+<!-- 
+    Verifico através da possição da caixa da pirâmide,
+    a cor que deve ser atribubuida a ela (através de uma classe CSS)
+    e se deve ou não conter o texto com o número referente ao numero de caixas da linha atual da pirâmide.
+ -->
+<?php 
+    $box_class = $j==$i ? 'black_box' : 'white_box';
+    $text = $j==1 ? $i : '';
+?> 
+<div class="box <?= $box_class ?>">       
+    <span><?= $text ?></span>    
+</div>
